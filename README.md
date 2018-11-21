@@ -29,7 +29,7 @@ dependencies {
 ```
 BaseClient client = IPCManager.get().connect(this, ServerActivity.ACTION_IPC);
 
-##BaseClient提供12中通信方法：（基本上看方法名就能知道如何使用）
+##BaseClient提供12种通信方法：（基本上看方法名就能知道如何使用）
 
   boolean sendMessage(String msg);
 
@@ -69,7 +69,7 @@ server.setOnMessageLisenter(new OnMessageLisenter() {
         @Override public void onMessageReceive( Message msg) {
       });
       
-void handleCallBack(Message msg) throws IllegalAccessException 当需要项客户端回调消息时调用
+void handleCallBack(Message msg) throws IllegalAccessException 当需要向客户端回调消息时调用
 
 ```
 
