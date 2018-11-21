@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">IPC</string>
+  <string name="sendipcmessagewithcallback">sendIPCMessageWithCallback</string>
+  <string name="sendipcmessage">sendIPCMessage</string>
+  <string name="connect">connect</string>
+  <string name="sendipcmessageblocked">sendIPCMessageBlocked</string>
+  <string name="client">Client:</string>
+  <string name="server_accept">Server:accept</string>
+</resources>

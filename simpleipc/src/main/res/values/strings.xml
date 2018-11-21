@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">SimpleIPC</string>
+  <string name="ipc_permission_description">simple ipc通信库限制广播接受权限</string>
+  <string name="ipc_permission_group">simple ipc</string>
+</resources>
