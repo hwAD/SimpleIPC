@@ -27,7 +27,7 @@ dependencies {
 
 ##客户端获取BaseClient
 ```
-BaseClient client = IPCManager.get().connect(this, ServerActivity.ACTION_IPC);
+BaseClient client = IPCManager.get().connect(this, ACTION_IPC);
 
 ##BaseClient提供12种通信方法：（基本上看方法名就能知道如何使用）
 
@@ -60,7 +60,7 @@ BaseClient client = IPCManager.get().connect(this, ServerActivity.ACTION_IPC);
 
 ##服务端获取BaseServer
 ```
-BaseServer server = IPCManager.get().accept(this, ServerActivity.ACTION_IPC);
+BaseServer server = IPCManager.get().accept(this, ACTION_IPC);
 server.setOnMessageLisenter(new OnMessageLisenter() {
         //根据客户端传递的消息类型提供两种监听方法
         @Override public void onMessageReceive( String msg) {
