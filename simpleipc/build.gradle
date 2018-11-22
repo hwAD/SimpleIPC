@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
 apply plugin: 'com.novoda.bintray-release'
 
 android {
@@ -43,8 +44,8 @@ dependencies {
 publish {
   userOrg = 'caoyuan'
   groupId = 'cn.com.hwtc.ipc'
-  artifactId = 'simpleIPC'
-  version = '1.0.0'
+  artifactId = 'SimpleIPC'
+  version = '1.0.1'
   description = 'A simple and efficient Android IPC library'
-  website = "https://github.com/novoda/${rootProject.name}"
+  website = "https://github.com/hwtc/SimpleIPC"
 }
