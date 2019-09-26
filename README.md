@@ -2,7 +2,7 @@
 一个使用简便，高效的Android进程间通信IPC框架。
 
 
-##特色
+## 特色
 
 1. 不需要创建Service,不需要编写AIDL，使得进程间通信像本地使用Handler一样方便简单。
 
@@ -13,7 +13,7 @@
 目前初步实现了基本IPC通信功能，开发中。。。
 
 
-##Gradle
+## Gradle
 
 ```
 dependencies {
@@ -58,7 +58,7 @@ BaseClient client = IPCManager.get().connect(this, ACTION_IPC);
       OnMessageLisenter onMessageLisenter);
 ```
 
-##服务端获取BaseServer
+## 服务端获取BaseServer
 ```
 BaseServer server = IPCManager.get().accept(this, ACTION_IPC);
 server.setOnMessageLisenter(new OnMessageLisenter() {
@@ -74,7 +74,7 @@ void handleCallBack(Message msg) throws IllegalAccessException 当需要向客�
 ```
 
 
-##注意事项
+## 注意事项
 
 1. 原则上，需要先调用客服端的connect（）。
 
